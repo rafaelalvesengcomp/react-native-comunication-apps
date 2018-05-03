@@ -1,8 +1,8 @@
 {
-  "name": "react-native-comunication-apps",
+  "name": "react-native-android-library-boilerplate",
   "version": "0.0.1",
-  "author": "Rafael Alves",
-  "private": true,
+  "author": "Christoph Michel http://cmichel.io",
+  "private": false,
   "license": "Unlicense",
   "repository": {
     "type": "git",

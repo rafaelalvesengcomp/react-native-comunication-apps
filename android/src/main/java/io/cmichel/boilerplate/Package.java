@@ -1,4 +1,4 @@
-package com.fortalsistemas.comunicationapps;
+package io.cmichel.boilerplate;
 
 import com.facebook.react.ReactPackage;
 import com.facebook.react.bridge.JavaScriptModule;
