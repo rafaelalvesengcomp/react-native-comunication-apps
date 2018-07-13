@@ -115,8 +115,8 @@ public class ComunicationModule extends ReactContextBaseJavaModule {
                 title = cursor.getString(cursor.getColumnIndex("_title"));
                 progress = cursor.getInt(cursor.getColumnIndex("_progress"));
                 tags = cursor.getString(cursor.getColumnIndex("_tags"));
-                isAudio = cursor.getInt(cursor.getColumnIndex("_isAudio"));
-                isVideo = cursor.getInt(cursor.getColumnIndex("_isVideo"));
+                isAudio = cursor.getInt(cursor.getColumnIndex("_isaudio"));
+                isVideo = cursor.getInt(cursor.getColumnIndex("_isvideo"));
 
                 paramsTmp.putString("_name", name);
                 paramsTmp.putString("_package", packagesName);
