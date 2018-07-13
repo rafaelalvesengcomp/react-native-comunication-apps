@@ -1,13 +1,13 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-          package="com.fortalsistemas.comunicationapps">
-    <uses-permission android:name="com.fortalsistemas.launcher.provider.permission.READ_PROVIDER"
+          package="br.com.febracis.kitmaster.comunicationapps">
+    <uses-permission android:name="br.com.febracis.kitmaster.home.provider.permission.READ_PROVIDER"
         />
-    <uses-permission android:name="com.fortalsistemas.launcher.provider.permission.WRITE_PROVIDER"
+    <uses-permission android:name="br.com.febracis.kitmaster.home.provider.permission.WRITE_PROVIDER"
         />
-    <permission android:name="com.fortalsistemas.launcher.provider.permission.READ_PROVIDER"
+    <permission android:name="br.com.febracis.kitmaster.home.provider.permission.READ_PROVIDER"
         android:protectionLevel="signature"
         />
-    <permission android:name="com.fortalsistemas.launcher.provider.permission.WRITE_PROVIDER"
+    <permission android:name="br.com.febracis.kitmaster.home.provider.permission.WRITE_PROVIDER"
         android:protectionLevel="signature"
         />
 </manifest>

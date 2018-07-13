@@ -21,7 +21,7 @@
     * Add the following to `android/app/src/main/java/**/MainApplication.java`:
         ```java
 
-        import com.fortalsistemas.comunicationapps.Package;
+        import br.com.febracis.kitmaster.comunicationapps.ComunicationApps;
 
         public class MainApplication extends Application implements ReactApplication {
 
@@ -29,9 +29,7 @@
             protected List<ReactPackage> getPackages() {
                 return Arrays.<ReactPackage>asList(
                     new MainReactPackage(),
-                    new Package()     // add this for react-native-android-library-boilerplate
+                    new ComunicationApps()     
                 );
             }
         }
-        ```
-4. Change line 85 on file Module, put number of line in table of application.

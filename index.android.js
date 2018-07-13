@@ -6,16 +6,26 @@ import { NativeModules } from 'react-native'
 
 export default class ComunicationApps extends Component{
 
-	static getProgress(){
-        NativeModules.ComunicationApps.getProgress();
-	}
+    static setup(name, packagesName, title, progress, tags, isAudio, isVideo){
+        NativeModules.ComunicationApps.setup(
+            name, packagesName, title, progress, tags, isAudio, isVideo
+        );
+    }
 
-	static setProgress(progress){
-		NativeModules.ComunicationApps.setProgress(progress);
-	}
+    static getInformations(){
+        NativeModules.ComunicationApps.getInformations();
+    }
 
-	render(){
-		return null;
-	}
+    static setProgress(progress){
+        NativeModules.ComunicationApps.setProgress(progress);
+    }
+
+    static test(){
+        console.warn('oi');
+    }
+
+    render(){
+        return null;
+    }
 }
 
