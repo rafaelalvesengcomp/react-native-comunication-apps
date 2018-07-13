@@ -2,30 +2,21 @@
 
 import React, { Component } from 'react';
 import { NativeModules } from 'react-native'
-// name as defined via ReactContextBaseJavaModule's getName
 
-export default class ComunicationApps extends Component{
+const ComunicationApps = {};
 
-    static setup(name, packagesName, title, progress, tags, isAudio, isVideo){
-        NativeModules.ComunicationApps.setup(
-            name, packagesName, title, progress, tags, isAudio, isVideo
-        );
-    }
-
-    static getInformations(){
-        NativeModules.ComunicationApps.getInformations();
-    }
-
-    static setProgress(progress){
-        NativeModules.ComunicationApps.setProgress(progress);
-    }
-
-    static test(){
-        console.warn('oi');
-    }
-
-    render(){
-        return null;
-    }
+ComunicationApps.setup = (name = '', packagesName = '', title = '', progress = 0, tags = '', isAudio = 0, isVideo = 0) =>{
+    NativeModules.ComunicationApps.setup(
+        name, packagesName, title, progress, tags, isAudio, isVideo
+    );
 }
 
+ComunicationApps.getInformations = () => {
+    NativeModules.ComunicationApps.getInformations();
+}
+
+ComunicationApps.update = (name, packagesName, title, progress, tags, isAudio, isVideo) => {
+    NativeModules.ComunicationApps.update(name, packagesName, title, progress, tags, isAudio, isVideo);
+}
+
+export default ComunicationApps;
