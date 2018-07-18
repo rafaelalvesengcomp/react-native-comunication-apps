@@ -46,7 +46,7 @@ public class ComunicationModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void setup(String name, String packagesName, String title, int progress, String tags, int isAudio, int isVideo){
+    public void setup(String name, String packagesName, String title, String thumbnail, String background, int progress, String tags, int isAudio, int isVideo){
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getReactApplicationContext());
         int firstExecution = preferences.getInt("firstExecution", -1);
 
@@ -55,6 +55,8 @@ public class ComunicationModule extends ReactContextBaseJavaModule {
             defaultValues.put("_name", name);
             defaultValues.put("_package", packagesName);
             defaultValues.put("_title", title);
+            defaultValues.put("_thumbnail", thumbnail);
+            defaultValues.put("_background", background);
             defaultValues.put("_progress", progress);
             defaultValues.put("_tags", tags);
             defaultValues.put("_isaudio", isAudio);
@@ -77,11 +79,13 @@ public class ComunicationModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void update(String name, String packagesName, String title, int progress, String tags, int isAudio, int isVideo){
+    public void update(String name, String packagesName, String title, String thumbnail, String background, int progress, String tags, int isAudio, int isVideo){
         ContentValues defaultValues = new ContentValues();
         defaultValues.put("_name", name);
         defaultValues.put("_package", packagesName);
         defaultValues.put("_title", title);
+        defaultValues.put("_thumbnail", thumbnail);
+        defaultValues.put("_background", background);
         defaultValues.put("_progress", progress);
         defaultValues.put("_tags", tags);
         defaultValues.put("_isaudio", isAudio);
@@ -105,6 +109,8 @@ public class ComunicationModule extends ReactContextBaseJavaModule {
                 String name = "";
                 String packagesName = "";
                 String title = "";
+                String thumbnail = "";
+                String background = "";
                 int progress = 0;
                 String tags = "";
                 int isAudio = 0;
@@ -113,6 +119,8 @@ public class ComunicationModule extends ReactContextBaseJavaModule {
                 name = cursor.getString(cursor.getColumnIndex("_name"));
                 packagesName = cursor.getString(cursor.getColumnIndex("_package"));
                 title = cursor.getString(cursor.getColumnIndex("_title"));
+                thumbnail = cursor.getString(cursor.getColumnIndex("_thumbnail"));
+                background = cursor.getString(cursor.getColumnIndex("_background"));
                 progress = cursor.getInt(cursor.getColumnIndex("_progress"));
                 tags = cursor.getString(cursor.getColumnIndex("_tags"));
                 isAudio = cursor.getInt(cursor.getColumnIndex("_isaudio"));
@@ -121,6 +129,8 @@ public class ComunicationModule extends ReactContextBaseJavaModule {
                 paramsTmp.putString("_name", name);
                 paramsTmp.putString("_package", packagesName);
                 paramsTmp.putString("_title", title);
+                paramsTmp.putString("_thumbnail", thumbnail);
+                paramsTmp.putString("_background", background);
                 paramsTmp.putInt("_progress", progress);
                 paramsTmp.putString("_tags", tags);
                 paramsTmp.putInt("_isaudio", isAudio);
