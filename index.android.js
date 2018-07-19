@@ -7,17 +7,25 @@ const ComunicationApps = {};
 
 ComunicationApps.setup = (name = '', packagesName = '', title = '', thumbnail = '', background = '', progress = 0, tags = '', isAudio = 0, isVideo = 0) =>{
     NativeModules.ComunicationApps.setup(
-        name, packagesName, title, thumbnail, background, progress, tags, isAudio, isVideo
+        name, packagesName, title, thumbnail, '', progress, tags, isAudio, isVideo
     );
+    NativeModules.ComunicationApps.setBackground(background);
 }
 
 ComunicationApps.getInformations = () => {
     NativeModules.ComunicationApps.getInformations();
 }
 
-ComunicationApps.update = (name, packagesName, title, thumbnail, background, progress, tags, isAudio, isVideo) => {
-    NativeModules.ComunicationApps.update(name, packagesName, title, thumbnail, background, progress, tags, isAudio, isVideo);
+ComunicationApps.update = (name, packagesName, title, progress, tags, isAudio, isVideo) => {
+    NativeModules.ComunicationApps.update(name, packagesName, title, progress, tags, isAudio, isVideo);
 }
 
+ComunicationApps.setBackground = (background) => {
+    NativeModules.ComunicationApps.setBackground(background);
+}
+
+ComunicationApps.setProgress = (progress) => {
+    NativeModules.ComunicationApps.setProgress(progress);
+}
 
 export default ComunicationApps;

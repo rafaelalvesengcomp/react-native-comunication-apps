@@ -64,8 +64,8 @@ public class ComunicationModule extends ReactContextBaseJavaModule {
 
             Context c = getReactApplicationContext();
             Uri uriTmp = Uri.parse("content://br.com.febracis.kitmaster.home.provider/general");
-
             Uri id = c.getContentResolver().insert(uriTmp, defaultValues);
+            Log.d("DEBUG", String.valueOf(id));
 
             SharedPreferences.Editor editor = preferences.edit();
             editor.putInt("firstExecution", 0);
@@ -79,20 +79,18 @@ public class ComunicationModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void update(String name, String packagesName, String title, String thumbnail, String background, int progress, String tags, int isAudio, int isVideo){
+    public void update(String name, String packagesName, String title, int progress, String tags, int isAudio, int isVideo){
         ContentValues defaultValues = new ContentValues();
         defaultValues.put("_name", name);
         defaultValues.put("_package", packagesName);
         defaultValues.put("_title", title);
-        defaultValues.put("_thumbnail", thumbnail);
-        defaultValues.put("_background", background);
         defaultValues.put("_progress", progress);
         defaultValues.put("_tags", tags);
         defaultValues.put("_isaudio", isAudio);
         defaultValues.put("_isvideo", isVideo);
 
         Context c = getReactApplicationContext();
-        c.getContentResolver().update(uriLauncher, defaultValues, null, null);
+        int update = c.getContentResolver().update(uriLauncher, defaultValues, null, null);
     }
 
     @ReactMethod
@@ -141,6 +139,23 @@ public class ComunicationModule extends ReactContextBaseJavaModule {
         }
 
         sendEvent(getReactApplicationContext(), "receiveInformations",params);
+    }
+
+    @ReactMethod
+    public void setBackground(String background){
+        ContentValues defaultValues = new ContentValues();
+        defaultValues.put("_background", background);
+
+        Context c = getReactApplicationContext();
+        c.getContentResolver().update(uriLauncher, defaultValues, null, null);
+    }
+
+    @ReactMethod void setProgress(int progress){
+        ContentValues defaultValues = new ContentValues();
+        defaultValues.put("_progress", progress);
+
+        Context c = getReactApplicationContext();
+        int update = c.getContentResolver().update(uriLauncher, defaultValues, null, null);
     }
 
     private void sendEvent(ReactContext reactContext,

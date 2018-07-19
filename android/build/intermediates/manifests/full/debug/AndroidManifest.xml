@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.febracis.kitmaster.comunicationapps"
+    android:versionCode="1"
+    android:versionName="0.0.1" >
+
+    <uses-sdk
+        android:minSdkVersion="16"
+        android:targetSdkVersion="22" />
+
+    <uses-permission android:name="br.com.febracis.kitmaster.home.provider.permission.READ_PROVIDER" />
+    <uses-permission android:name="br.com.febracis.kitmaster.home.provider.permission.WRITE_PROVIDER" />
+
+    <permission
+        android:name="br.com.febracis.kitmaster.home.provider.permission.READ_PROVIDER"
+        android:protectionLevel="signature" />
+    <permission
+        android:name="br.com.febracis.kitmaster.home.provider.permission.WRITE_PROVIDER"
+        android:protectionLevel="signature" />
+
+</manifest>

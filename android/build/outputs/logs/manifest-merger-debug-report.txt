@@ -1,0 +1,57 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:1:1-13:12
+INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:1:1-13:12
+INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:1:1-13:12
+INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:1:1-13:12
+INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:1:1-13:12
+INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:1:1-13:12
+INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:1:1-13:12
+	package
+		ADDED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:2:11-63
+		INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml
+		ADDED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:1:1-13:12
+		INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml
+	android:versionCode
+		INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml
+		ADDED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:1:1-13:12
+		INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:1:11-69
+uses-permission#br.com.febracis.kitmaster.home.provider.permission.READ_PROVIDER
+ADDED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:3:5-4:11
+	android:name
+		ADDED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:3:22-101
+uses-permission#br.com.febracis.kitmaster.home.provider.permission.WRITE_PROVIDER
+ADDED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:5:5-6:11
+	android:name
+		ADDED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:5:22-102
+permission#br.com.febracis.kitmaster.home.provider.permission.READ_PROVIDER
+ADDED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:7:5-9:11
+	android:protectionLevel
+		ADDED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:8:9-44
+	android:name
+		ADDED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:7:17-96
+permission#br.com.febracis.kitmaster.home.provider.permission.WRITE_PROVIDER
+ADDED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:10:5-12:11
+	android:protectionLevel
+		ADDED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:11:9-44
+	android:name
+		ADDED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml:10:17-97
+uses-sdk
+INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml
+INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml
+INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml
+INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml
+		ADDED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml
+		ADDED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml
+		INJECTED from /Users/rafaelalves/Projetos/kitmasterdigital/kitautoresponsabilidade/node_modules/react-native-comunication-apps/android/src/main/AndroidManifest.xml
