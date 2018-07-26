@@ -5,9 +5,9 @@ import { NativeModules } from 'react-native'
 
 const ComunicationApps = {};
 
-ComunicationApps.setup = (name = '', packagesName = '', title = '', thumbnail = '', background = '', progress = 0, tags = '', isAudio = 0, isVideo = 0) =>{
+ComunicationApps.setup = (name = '', packagesName = '', title = '', thumbnail = '', background = '', progress = 0, tags = '', lastViewVideos = '', isAudio = 0, isVideo = 0) =>{
     NativeModules.ComunicationApps.setup(
-        name, packagesName, title, thumbnail, '', progress, tags, isAudio, isVideo
+        name, packagesName, title, thumbnail, '', progress, tags, lastViewVideos, isAudio, isVideo
     );
     NativeModules.ComunicationApps.setBackground(background);
 }
@@ -16,8 +16,8 @@ ComunicationApps.getInformations = () => {
     NativeModules.ComunicationApps.getInformations();
 }
 
-ComunicationApps.update = (name, packagesName, title, progress, tags, isAudio, isVideo) => {
-    NativeModules.ComunicationApps.update(name, packagesName, title, progress, tags, isAudio, isVideo);
+ComunicationApps.update = (name, packagesName, title, progress, tags, lastViewVideos, isAudio, isVideo) => {
+    NativeModules.ComunicationApps.update(name, packagesName, title, progress, tags, lastViewVideos, isAudio, isVideo);
 }
 
 ComunicationApps.setBackground = (background) => {
