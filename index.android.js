@@ -28,4 +28,8 @@ ComunicationApps.setProgress = (progress) => {
     NativeModules.ComunicationApps.setProgress(progress);
 }
 
+ComunicationApps.setLastViewVideos = (lastViewTime) => {
+    NativeModules.ComunicationApps.setLastViewVideos(lastViewTime);
+}
+
 export default ComunicationApps;
