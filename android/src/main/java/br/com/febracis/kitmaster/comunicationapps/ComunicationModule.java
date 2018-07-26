@@ -166,7 +166,7 @@ public class ComunicationModule extends ReactContextBaseJavaModule {
     @ReactMethod
     public void setLastViewVideos(String lastViewVideo){
         ContentValues defaultValues = new ContentValues();
-        defaultValues.put("_lastviewvideo", lastViewVideo);
+        defaultValues.put("_lastviewvideos", lastViewVideo);
 
         Context c = getReactApplicationContext();
         c.getContentResolver().update(uriLauncher, defaultValues, null, null);
