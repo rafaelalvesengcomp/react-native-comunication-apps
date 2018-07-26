@@ -46,7 +46,7 @@ public class ComunicationModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void setup(String name, String packagesName, String title, String thumbnail, String background, int progress, String tags, int isAudio, int isVideo){
+    public void setup(String name, String packagesName, String title, String thumbnail, String background, int progress, String tags, String lastViewVideos, int isAudio, int isVideo){
         SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getReactApplicationContext());
         int firstExecution = preferences.getInt("firstExecution", -1);
 
@@ -59,6 +59,7 @@ public class ComunicationModule extends ReactContextBaseJavaModule {
             defaultValues.put("_background", background);
             defaultValues.put("_progress", progress);
             defaultValues.put("_tags", tags);
+            defaultValues.put("_lastviewvideos", lastViewVideos);
             defaultValues.put("_isaudio", isAudio);
             defaultValues.put("_isvideo", isVideo);
 
@@ -79,13 +80,14 @@ public class ComunicationModule extends ReactContextBaseJavaModule {
     }
 
     @ReactMethod
-    public void update(String name, String packagesName, String title, int progress, String tags, int isAudio, int isVideo){
+    public void update(String name, String packagesName, String title, int progress, String tags, String lastViewVideos, int isAudio, int isVideo){
         ContentValues defaultValues = new ContentValues();
         defaultValues.put("_name", name);
         defaultValues.put("_package", packagesName);
         defaultValues.put("_title", title);
         defaultValues.put("_progress", progress);
         defaultValues.put("_tags", tags);
+        defaultValues.put("_lastviewvideos", lastViewVideos);
         defaultValues.put("_isaudio", isAudio);
         defaultValues.put("_isvideo", isVideo);
 
@@ -111,6 +113,7 @@ public class ComunicationModule extends ReactContextBaseJavaModule {
                 String background = "";
                 int progress = 0;
                 String tags = "";
+                String lastViewVideos = "";
                 int isAudio = 0;
                 int isVideo = 0;
 
@@ -121,6 +124,7 @@ public class ComunicationModule extends ReactContextBaseJavaModule {
                 background = cursor.getString(cursor.getColumnIndex("_background"));
                 progress = cursor.getInt(cursor.getColumnIndex("_progress"));
                 tags = cursor.getString(cursor.getColumnIndex("_tags"));
+                lastViewVideos = cursor.getString(cursor.getColumnIndex("_lastviewvideos"));
                 isAudio = cursor.getInt(cursor.getColumnIndex("_isaudio"));
                 isVideo = cursor.getInt(cursor.getColumnIndex("_isvideo"));
 
@@ -131,6 +135,7 @@ public class ComunicationModule extends ReactContextBaseJavaModule {
                 paramsTmp.putString("_background", background);
                 paramsTmp.putInt("_progress", progress);
                 paramsTmp.putString("_tags", tags);
+                paramsTmp.putString("_lastviewvideos", lastViewVideos);
                 paramsTmp.putInt("_isaudio", isAudio);
                 paramsTmp.putInt("_isvideo", isVideo);
 
@@ -156,6 +161,15 @@ public class ComunicationModule extends ReactContextBaseJavaModule {
 
         Context c = getReactApplicationContext();
         int update = c.getContentResolver().update(uriLauncher, defaultValues, null, null);
+    }
+
+    @ReactMethod
+    public void setLastViewVideo(String lastViewVideo){
+        ContentValues defaultValues = new ContentValues();
+        defaultValues.put("_lastviewvideo", lastViewVideo);
+
+        Context c = getReactApplicationContext();
+        c.getContentResolver().update(uriLauncher, defaultValues, null, null);
     }
 
     private void sendEvent(ReactContext reactContext,
