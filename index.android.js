@@ -7,9 +7,8 @@ const ComunicationApps = {};
 
 ComunicationApps.setup = (name = '', packagesName = '', title = '', thumbnail = '', background = '', progress = 0, tags = '', lastViewVideos = '', isAudio = 0, isVideo = 0) =>{
     NativeModules.ComunicationApps.setup(
-        name, packagesName, title, thumbnail, '', progress, tags, lastViewVideos, isAudio, isVideo
+        name, packagesName, title, thumbnail, background, progress, tags, lastViewVideos, isAudio, isVideo
     );
-    NativeModules.ComunicationApps.setBackground(background);
 }
 
 ComunicationApps.getInformations = () => {
